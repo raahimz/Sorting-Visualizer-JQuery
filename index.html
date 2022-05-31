@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="UTF-8">
+    <title>Sorting Algorithm Visualiser</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand mb-0 h1" href="#">Sorting Algorithm Visualizer</a>
+
+        <div style="width: 25px;"></div>
+
+        <form class="form-inline">
+            <button class="btn btn-outline-light" type="button" id="generate-array">Generate Array</button>
+
+            <div style="width: 25px;"></div>
+            
+            <label style="color: white; margin-right: 5px;" for="customRange1" class="form-label">Array Size</label>
+            <input type="range" class="form-range" id="slider1" min="10" max="100">
+
+            <div style="width: 25px;"></div>
+            
+            <div class="btn-group btn-group-toggle" id="speed-btns" data-toggle="buttons">
+              <label class="btn btn-secondary active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked>1x</label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off">2x</label>
+            </div>
+
+            <div style="width: 25px;"></div>
+
+            <div class="btn-group btn-group-toggle" id="algo-btns" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked> Bubble Sort
+                </label>
+                <label class="btn btn-secondary disabled">
+                  <input type="radio" name="options" id="option2" autocomplete="off"> Merge Sort
+                </label>
+                <label class="btn btn-secondary disabled">
+                  <input type="radio" name="options" id="option3" autocomplete="off"> Quick Sort
+                </label>
+            </div>
+        </form>
+
+        <div style="width: 50px;"></div>
+        
+        <a href="https://twitter.com/raahimzee" class="fa fa-twitter" style="color: white !important;"></a>
+        <a href="https://www.linkedin.com/in/raahim-zeeshan-276827162/" class="fa fa-linkedin" style="color: white !important;"></a>
+        <a href="https://www.instagram.com/raahimzee/" class="fa fa-instagram" style="color: white !important;"></a>
+        <a href="https://www.youtube.com/channel/UCwzRHJ_7VlPAT_KyRXWl2vQ" class="fa fa-youtube" style="color: white !important;"></a>
+        
+
+    </nav>
+
+    <div style="text-align: center; margin-top: 30px;">
+      <button id="sort" class="sort-button">Sort</button>
+    </div>
+
+    <div class="sorting-canvas" style="margin-top: 50px;">
+    </div>
+
+      
+    <canvas class="background"></canvas>
+
+    <script src="particles.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <p id="footer" style="text-align: center;">Made with ❤️ by Raahim Z.</p>
+</body>
+</html>
